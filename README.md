@@ -1,6 +1,6 @@
 # NLP Airbnb — Valoración de reseñas con sentimiento
 
-Proyecto de **NLP** que valora reseñas de Airbnb en español: clasifica el sentimiento (positivo, neutro, negativo) y lo mapea a una puntuación de **0 a 5 estrellas**. Incluye un modelo entrenado con TF-IDF + regresión logística, una API en FastAPI y una web tipo Airbnb en Next.js.
+Proyecto de **NLP** que valora reseñas de Airbnb en español: clasifica el sentimiento (positivo, neutro, negativo) y lo mapea a una puntuación de **0 a 5 estrellas**. El modelo alcanza **94,69% de accuracy** en test (validación cruzada 5-fold ~91%). Incluye pipeline TF-IDF + regresión logística, API en FastAPI y web tipo Airbnb en Next.js.
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688?logo=fastapi&logoColor=white)
@@ -10,7 +10,7 @@ Proyecto de **NLP** que valora reseñas de Airbnb en español: clasifica el sent
 
 ## Qué hace el proyecto
 
-- **Clasifica el sentimiento** de reseñas en español (Positivo / Neutro / Negativo).
+- **Clasifica el sentimiento** de reseñas en español (Positivo / Neutro / Negativo) con **~94,7% accuracy** en test.
 - **Asigna estrellas (0–5)** a partir de las probabilidades del modelo.
 - **Lista reseñas** de un CSV de Barcelona con su valoración y permite **buscar, filtrar y ordenar**.
 - **Valorar tu propia reseña**: escribe un texto y el modelo devuelve estrellas y etiqueta.

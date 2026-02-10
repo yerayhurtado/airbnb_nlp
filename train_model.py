@@ -153,11 +153,5 @@ def main():
     joblib.dump(pipeline, MODEL_DIR / "sentiment_pipeline.joblib")
     print(f"\nModelo guardado en {MODEL_DIR / 'sentiment_pipeline.joblib'}")
 
-    if acc >= 0.90:
-        print("\nObjetivo cumplido: accuracy >= 90%")
-    else:
-        print(f"\nAccuracy actual {acc*100:.2f}%. Revisa datos o hiperparámetros.")
-
-
 if __name__ == "__main__":
     main()
